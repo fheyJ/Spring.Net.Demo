@@ -1,7 +1,4 @@
-﻿using Spring.Context;
-using Spring.Context.Support;
-using Spring.Net.Demo.Lesson3;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +16,7 @@ namespace Spring.Net.Demo.Lesson3
 
         static void AppRegistry()
         {
-            MyXmlFactory ctx = new MyXmlFactory("../Objects.xml");
+            MyXmlFactory ctx = new MyXmlFactory(@"Objects.xml");
             Console.WriteLine(ctx.GetObject("PersonDao").ToString());
         }
     }

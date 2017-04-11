@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<objects>
+
+  <object id="PersonDao" type="Spring.Net.Demo.Lesson3.PersonDao, Spring.Net.Demo.Lesson3" />
+
+</objects>
