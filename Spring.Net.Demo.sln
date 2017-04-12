@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Net.Demo.Lesson2", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Net.Demo.Lesson3", "Spring.Net.Demo.Lesson3\Spring.Net.Demo.Lesson3.csproj", "{EB742EB6-2357-4CA5-80FC-6618B29D9F23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Net.Demo.Lesson4", "Spring.Net.Demo.Lesson4\Spring.Net.Demo.Lesson4.csproj", "{C9716B57-EC18-4243-8FCE-5404F55A4067}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EB742EB6-2357-4CA5-80FC-6618B29D9F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB742EB6-2357-4CA5-80FC-6618B29D9F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB742EB6-2357-4CA5-80FC-6618B29D9F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9716B57-EC18-4243-8FCE-5404F55A4067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9716B57-EC18-4243-8FCE-5404F55A4067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9716B57-EC18-4243-8FCE-5404F55A4067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9716B57-EC18-4243-8FCE-5404F55A4067}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

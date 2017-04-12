@@ -16,8 +16,11 @@ namespace Spring.Net.Demo.Lesson3
 
         static void AppRegistry()
         {
-            MyXmlFactory ctx = new MyXmlFactory(@"Objects.xml");
-            Console.WriteLine(ctx.GetObject("PersonDao").ToString());
+            MyXmlFactory ctx = new MyXmlFactory("Objects.xml");
+
+            PersonDao demo = ctx.GetObject("PersonDao") as PersonDao;
+
+            Console.WriteLine(demo.say());
         }
     }
 }

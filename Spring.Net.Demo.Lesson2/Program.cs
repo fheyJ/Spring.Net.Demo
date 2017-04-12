@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Spring.Net.Demo.Lesson3
+namespace Spring.Net.Demo.Lesson2
 {
     class Program
     {
@@ -19,7 +19,7 @@ namespace Spring.Net.Demo.Lesson3
 
         static void AppRegistry()
         {
-            MyXmlFactory ctx = new MyXmlFactory("../Objects.xml");
+            IApplicationContext ctx = ContextRegistry.GetContext();
             Console.WriteLine(ctx.GetObject("PersonDao").ToString());
         }
     }

@@ -12,5 +12,10 @@ namespace Spring.Net.Demo.Lesson3
         {
             return "我是PersonDao";
         }
+
+        public string say()
+        {
+            return "123";
+        }
     }
 }
