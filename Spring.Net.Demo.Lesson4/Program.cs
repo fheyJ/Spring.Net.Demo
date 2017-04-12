@@ -29,7 +29,7 @@ namespace Spring.Net.Demo.Lesson4
         {
             string[] xmlFiles = new string[]
             {
-                "assembly://CreateObjects/CreateObjects/Objects.xml"
+                "assembly://Spring.Net.Demo.Lesson4/Spring.Net.Demo.Lesson4/Objects.xml"
             };
             IApplicationContext context = new XmlApplicationContext(xmlFiles);
 
@@ -44,7 +44,7 @@ namespace Spring.Net.Demo.Lesson4
         {
             string[] xmlFiles = new string[]
             {
-                "assembly://CreateObjects/CreateObjects/Objects.xml"
+                "assembly://Spring.Net.Demo.Lesson4/Spring.Net.Demo.Lesson4/Objects.xml"
             };
             IApplicationContext context = new XmlApplicationContext(xmlFiles);
 
@@ -59,7 +59,7 @@ namespace Spring.Net.Demo.Lesson4
         {
             string[] xmlFiles = new string[]
             {
-                "assembly://CreateObjects/CreateObjects/Objects.xml"
+                "assembly://Spring.Net.Demo.Lesson4/Spring.Net.Demo.Lesson4/Objects.xml"
             };
             IApplicationContext context = new XmlApplicationContext(xmlFiles);
 
@@ -74,7 +74,7 @@ namespace Spring.Net.Demo.Lesson4
         {
             string[] xmlFiles = new string[]
             {
-                "assembly://CreateObjects/CreateObjects/Objects.xml"
+                "assembly://Spring.Net.Demo.Lesson4/Spring.Net.Demo.Lesson4/Objects.xml"
             };
             IApplicationContext context = new XmlApplicationContext(xmlFiles);
 
@@ -89,7 +89,7 @@ namespace Spring.Net.Demo.Lesson4
         {
             string[] xmlFiles = new string[]
             {
-                "assembly://CreateObjects/CreateObjects/Objects.xml"
+                "assembly://Spring.Net.Demo.Lesson4/Spring.Net.Demo.Lesson4/Objects.xml"
             };
             IApplicationContext context = new XmlApplicationContext(xmlFiles);
 
