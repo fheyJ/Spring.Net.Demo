@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{26B50AA2-0960-4506-A437-F6A7FAA0F387}</ProjectGuid>
+    <ProjectGuid>{A5E949B2-D908-4412-9E19-C40AC588C99B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Spring.Net.Demo.Lesson2</RootNamespace>
-    <AssemblyName>Spring.Net.Demo.Lesson2</AssemblyName>
+    <RootNamespace>Spring.Net.Demo.Lesson6</RootNamespace>
+    <AssemblyName>Spring.Net.Demo.Lesson6</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -55,25 +55,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Info.cs" />
-    <Compile Include="PersonDao.cs" />
+    <Compile Include="Computer.cs" />
+    <Compile Include="ITool.cs" />
+    <Compile Include="ModernPerson.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Objects.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Spring.Net.Demo.Lesson3\Spring.Net.Demo.Lesson3.csproj">
-      <Project>{EB742EB6-2357-4CA5-80FC-6618B29D9F23}</Project>
-      <Name>Spring.Net.Demo.Lesson3</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

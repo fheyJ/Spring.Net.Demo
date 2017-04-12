@@ -5,6 +5,21 @@
 	xsi:schemaLocation="http://www.springframework.net
 		http://www.springframework.net/xsd/spring-objects.xsd">
 
-  <object id="PersonDao" type="Spring.Net.Demo.Lesson2.PersonDao, Spring.Net.Demo.Lesson2" />
+  <object id="PersonDao" type="Spring.Net.Demo.Lesson2.PersonDao, Spring.Net.Demo.Lesson2" >
+    <!--PersonDao类属性-->
+    <property name="A" value="Liu Dong"/>
+    <property name="B" value="27"/>
+
+    <property name="C" ref="Test"/>
+    
+  </object>
+
+  <object id="Test" type="Spring.Net.Demo.Lesson2.Info, Spring.Net.Demo.Lesson2" >
+    <!--PersonDao类属性-->
+    <property name="S1" value="Pig"/>
+    <property name="S2" value="Cat"/>
+
+
+  </object>
   
 </objects>

@@ -8,9 +8,21 @@ namespace Spring.Net.Demo.Lesson2
 {
     public class PersonDao
     {
+
+        public string A;
+        public string B;
+
+        public Info C;
+
         public override string ToString()
         {
             return "我是PersonDao";
         }
+
+        public string GetStr()
+        {
+            return "ABC";
+        }
+
     }
 }
