@@ -12,6 +12,8 @@ namespace Spring.Net.Demo.Lesson1
     {
         static void Main(string[] args)
         {
+            NormalMethod();  // 一般方法
+            FactoryMethod();  // 工厂方法
             IoCMethod();  // IoC方法"
 
             Console.ReadLine();
@@ -26,6 +28,20 @@ namespace Spring.Net.Demo.Lesson1
                 dao.Save();
                 Console.WriteLine("我是IoC方法");
             }
+        }
+
+        private static void FactoryMethod()
+        {
+            IPersonDao dao = DataAccess.CreatePersonDao();
+            dao.Save();
+            Console.WriteLine("我是工厂方法");
+        }
+
+        private static void NormalMethod()
+        {
+            IPersonDao dao = new PersonDao();
+            dao.Save();
+            Console.WriteLine("我是一般方法");
         }
     }
 }

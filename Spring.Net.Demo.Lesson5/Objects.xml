@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<objects xmlns="http://www.springframework.net"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.net
+		http://www.springframework.net/xsd/spring-objects.xsd">
+
+  <!--单例模式-->
+  <object id="personDao" type="Spring.Net.Demo.Lesson5.PersonDao, Spring.Net.Demo.Lesson5" />
+
+  <!--非单例模式-->
+  <object id="person" type="Spring.Net.Demo.Lesson5.Person, Spring.Net.Demo.Lesson5" singleton="false" />
+
+  <!--调用时加载-->
+  <object id="personServer" type="Spring.Net.Demo.Lesson5.PersonServer, Spring.Net.Demo.Lesson5" lazy-init="true" />
+
+</objects>
