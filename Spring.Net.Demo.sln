@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringNetAop", "SpringNetAo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Net.Demo.Lesson13", "Spring.Net.Demo.Lesson13\Spring.Net.Demo.Lesson13.csproj", "{FBC052BB-D649-4E99-96EA-D2991A78796F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Net.Demo.Lesson14", "Spring.Net.Demo.Lesson14\Spring.Net.Demo.Lesson14.csproj", "{8FD18657-93CC-4140-8CC8-4EA3CC098D6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{FBC052BB-D649-4E99-96EA-D2991A78796F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC052BB-D649-4E99-96EA-D2991A78796F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC052BB-D649-4E99-96EA-D2991A78796F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD18657-93CC-4140-8CC8-4EA3CC098D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD18657-93CC-4140-8CC8-4EA3CC098D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD18657-93CC-4140-8CC8-4EA3CC098D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD18657-93CC-4140-8CC8-4EA3CC098D6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
