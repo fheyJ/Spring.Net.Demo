@@ -25,8 +25,8 @@ namespace SpringNetAop
         {
             IApplicationContext context = ContextRegistry.GetContext();
 
-            Person P = context.GetObject("Person") as Person;
-            P.Save();
+            //Person P = context.GetObject("Person") as Person;
+            //P.Save();
 
             IStudentService command = (IStudentService)context["myStudentService"];
             command.GoToSchool("guwei4037", "一");
