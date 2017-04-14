@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Spring.Net.Demo.Lesson1
+namespace SpringNetAop.Security
 {
-    public interface IPersonDao
+    public interface ISecurityManager
     {
-        void Save();
+        bool IsPass(string userName);
     }
-    
 }

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Spring.Net.Demo.Lesson1
+namespace SpringNetAop.CompanyManager
 {
-    public interface IPersonDao
+    public interface ICompanyManager
     {
+        string UserName { get; set; }
+
         void Save();
     }
-    
 }
