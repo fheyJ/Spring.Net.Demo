@@ -11,6 +11,12 @@ namespace Spring.Net.Demo.Lesson13
     {
         static void Main(string[] args)
         {
+            Before();
+            Around();
+        }
+
+        private static void Around()
+        {
             ProxyFactory factory = new ProxyFactory(new OrderService() { UserName = "admin" });
 
             factory.AddAdvice(new AroundAdvise());
@@ -24,7 +30,15 @@ namespace Spring.Net.Demo.Lesson13
 
         private static void Before()
         {
+            ProxyFactory factory = new ProxyFactory(new OrderService() { UserName = "admin" });
+            factory.AddAdvice(new BeforeAdvice());
 
+            IOrderService service = (IOrderService)factory.GetProxy();
+            object result = service.Save(1);
+
+            Console.WriteLine(result);
+
+            Console.ReadLine();
         }
     }
 }

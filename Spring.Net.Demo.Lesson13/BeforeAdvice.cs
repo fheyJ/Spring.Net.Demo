@@ -9,6 +9,7 @@ namespace Spring.Net.Demo.Lesson13
 {
     public class BeforeAdvice : IMethodBeforeAdvice
     {
+        
         public void Before(System.Reflection.MethodInfo method, object[] args, object target)
         {
 

@@ -13,6 +13,9 @@ namespace Spring.Net.Demo.Lesson13
         {
             IOrderService target = (IOrderService)invocation.Target;
             SecurityService manager = new SecurityService();
+
+            Console.WriteLine(target.UserName);
+
             if (manager.IsPass(target.UserName))
             {
                 return invocation.Proceed();
