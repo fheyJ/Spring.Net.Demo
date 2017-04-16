@@ -2,6 +2,7 @@
 using Spring.Context;
 using Spring.Context.Support;
 using Spring.Net.Demo.Lesson15.Interface;
+using Spring.Net.Demo.Lesson15.Service;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,6 +17,14 @@ namespace Spring.Net.Demo.Lesson15
         static void Main(string[] args)
         {
             IApplicationContext ctx = ContextRegistry.GetContext();
+
+            IService gt = ctx.GetObject("categoryService") as IService;
+            
+            //拦截
+            gt.FindAll();
+
+            //不拦截
+            gt.Save(111);
 
             IDictionary<string, object> speakerDictionary = ctx.GetObjectsOfType(typeof(IService));
             foreach (var entry in speakerDictionary)
