@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="IBatis.Mappers.ContentMapper"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <typeAlias alias="ContentObject" type="IBatis.Model.ContentObject,IBatis"/>
+  </alias>
+  
+  <resultMaps>
+    <resultMap class="ContentObject" id="ContentObject_DefaultResult">
+      <result column="WfmId" property="WfmId" type="string" dbType="varchar"/>
+      <result column="FlowName" property="FlowName" type="string" dbType="varchar"/>
+    </resultMap>
+  </resultMaps>
+  
+  <statements>
+
+    
+    <select id="Content_DefaultSelect" parameterClass="Hashtable" resultMap="ContentObject_DefaultResult" >
+      <![CDATA[
+        SELECT wfmid,FlowName  FROM dbo.t_Flow_Base 
+      ]]>
+      <iterate prepend="where wfmid in" open="(" close=")" conjunction="," property="wfmids" >
+        <![CDATA[#wfmids[]#]]>
+      </iterate>
+      
+    </select>
+  </statements>
+  
+  
+</sqlMap>

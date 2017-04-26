@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Net.Demo.Lesson14", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Net.Demo.Lesson15", "Spring.Net.Demo.Lesson15\Spring.Net.Demo.Lesson15.csproj", "{F75F8243-787E-4960-9F63-BB19B5C9EBD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.AutoWired", "Spring.AutoWired\Spring.AutoWired.csproj", "{0A875305-9B77-4A1B-8FAE-2E8F1256031C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBatis", "IBatis\IBatis.csproj", "{762D933B-2582-4196-BEF6-8A14F8459DCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{F75F8243-787E-4960-9F63-BB19B5C9EBD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F75F8243-787E-4960-9F63-BB19B5C9EBD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F75F8243-787E-4960-9F63-BB19B5C9EBD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A875305-9B77-4A1B-8FAE-2E8F1256031C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A875305-9B77-4A1B-8FAE-2E8F1256031C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A875305-9B77-4A1B-8FAE-2E8F1256031C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A875305-9B77-4A1B-8FAE-2E8F1256031C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762D933B-2582-4196-BEF6-8A14F8459DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762D933B-2582-4196-BEF6-8A14F8459DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762D933B-2582-4196-BEF6-8A14F8459DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762D933B-2582-4196-BEF6-8A14F8459DCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
