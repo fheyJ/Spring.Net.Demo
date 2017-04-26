@@ -14,8 +14,8 @@ namespace IBatis.Repositoy
         public List<ContentObject> GetList(ArrayList wfmids)
         {
             Hashtable param = new Hashtable();
-            param.Add("wfmids", wfmids);
-            //param.Add("RootId", "zhuss0520150317150535361");
+            //param.Add("wfmids", wfmids);
+            param.Add("RootId", "zhuss0520150317150535361");
             var list = Mapper.Instance().QueryForList<ContentObject>("IBatis.Mappers.ContentMapper.Content_DefaultSelect", param) as List<ContentObject>;
             return list;
         }

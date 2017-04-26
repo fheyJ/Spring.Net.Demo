@@ -17,13 +17,42 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 
     
     <select id="Content_DefaultSelect" parameterClass="Hashtable" resultMap="ContentObject_DefaultResult" >
-      <![CDATA[
+      <!--<![CDATA[
         SELECT wfmid,FlowName  FROM dbo.t_Flow_Base 
       ]]>
       <iterate prepend="where wfmid in" open="(" close=")" conjunction="," property="wfmids" >
         <![CDATA[#wfmids[]#]]>
-      </iterate>
+      </iterate>-->
+
+      <![CDATA[    
+      select wfmid,FlowName  FROM dbo.t_Flow_Base 
+      ]]>
       
+      <dynamic prepend="where">
+        <isNotNull property="wfmids" prepend="AND">
+          <iterate property="wfmids" open="wfmid in (" close=")" conjunction=",">
+            #wfmids[]#
+          </iterate>
+        </isNotNull>
+        <isNotEmpty prepend="AND" property="RootId">
+          [RootId] = #RootId#
+        </isNotEmpty>
+      </dynamic>
+      
+      
+      <!--<dynamic prepend="where">
+        <isParameterPresent>
+          <isNotEmpty prepend="AND" property="RootId">
+            [RootId] = #RootId#
+          </isNotEmpty>
+          
+        </isParameterPresent>
+      </dynamic>
+
+      <iterate prepend=" and wfmid in" open="(" close=")" conjunction="," property="wfmids" >
+        <![CDATA[#wfmids[]#]]>
+      </iterate>-->
+
     </select>
   </statements>
   
