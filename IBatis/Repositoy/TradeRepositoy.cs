@@ -13,6 +13,7 @@ namespace IBatis.Repositoy
     {
         public List<ContentObject> GetList(ArrayList wfmids)
         {
+            ISqlMapper mapper = Mapper.Instance();
             Hashtable param = new Hashtable();
             //param.Add("wfmids", wfmids);
             param.Add("RootId", "zhuss0520150317150535361");
