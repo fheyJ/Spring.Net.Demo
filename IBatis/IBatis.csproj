@@ -62,11 +62,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MapHelper\Mapper.cs" />
     <Compile Include="Model\ContentObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositoy\AbstractService.cs" />
     <Compile Include="Repositoy\TradeRepositoy.cs" />
+    <Compile Include="Service\UserInfoService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

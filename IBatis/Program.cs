@@ -1,5 +1,6 @@
 ﻿using IBatis.Model;
 using IBatis.Repositoy;
+using IBatis.Service;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,6 +12,9 @@ namespace IBatis
 {
     class Program
     {
+
+        //UserInfoService service = new UserInfoService();
+
         static void Main(string[] args)
         {
             TradeRepositoy trade = new TradeRepositoy();
@@ -22,7 +26,7 @@ namespace IBatis
                 "caiwen0120130506175342738"
             };
 
-            List<ContentObject> list = trade.GetList(array);
+            List<ContentObject> list = UserInfoService.UserInfoInsertOne(array);
 
             Console.ReadLine();
 
